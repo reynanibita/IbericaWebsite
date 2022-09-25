@@ -1,0 +1,26 @@
+{%load static%}
+<!-- ======= nav ======= -->
+<nav id="nav" class="nav">
+    <div class="container-fluid container-sm d-flex align-items-center justify-content-between">
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+        <img src="{% static 'img/logo/Labo-Logo.png' %}" height="120px" alt="">
+      </a>
+
+      <div id="menu" class="menu">
+        <ul>
+          <li><a class="nav-link scrollto" href="{% url 'index' %}">Home</a></li>
+          <li class="dropdown"><a href="{% url 'index' %}"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="">About Iberica</a></li>
+              <li><a href="">Offices</a></li>
+              <li><a href="">Products and Services</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto " href="">Announcement</a></li>
+          <li><a class="nav-link scrollto " href="">Department and Offices</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </div><!-- .navbar -->
+
+    </div>
+  </nav><!-- End nav -->
